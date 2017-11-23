@@ -20,17 +20,22 @@ body {
   height: 19px; }
 
 .decoration-circle-pink {
-  background-color: #e91e63; }
+  width: 16px;
+  height: 16px;
+  border: solid 4px #e91e63;
+  border-radius: 100px; }
 
 .decoration-circle-green {
-  background-color: #b1d136; }
+  width: 16px;
+  height: 16px;
+  border: solid 4px #b1d136;
+  border-radius: 100px; }
 
 .decoration-circle-yellow {
-  background-color: #ffc107; }
-
-body {
-  font-size: 14px;
-  font-family: Lato; }
+  width: 16px;
+  height: 16px;
+  border: solid 4px #ffc107;
+  border-radius: 100px; }
 
 a,
 a:hover,

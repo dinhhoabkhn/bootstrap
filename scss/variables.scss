@@ -16,6 +16,11 @@ $red: #f44336;
 	top: $x;
 	right: $y;
 }
+@mixin position-bottom($x,$y){
+	position: absolute;
+	bottom: $x;
+	left: $y;
+}
 @font-face{
 	font-family: Lato;
 	src: url('../fonts/Lato-Regular.ttf');
@@ -42,17 +47,22 @@ body{
 	height: 19px;
 }
 .decoration-circle-pink{
-	background-color: $pink;
+	width: 16px;
+    height: 16px;
+    border: solid 4px #e91e63;
+    border-radius: 100px;
 }
 .decoration-circle-green{
-	background-color: $green;
+	width: 16px;
+    height: 16px;
+    border: solid 4px #b1d136;
+    border-radius: 100px;
 }
 .decoration-circle-yellow{
-	background-color: $yellow;
-}
-body{
-	font-size: 14px;
-	font-family: Lato;
+	width: 16px;
+    height: 16px;
+    border: solid 4px #ffc107;
+    border-radius: 100px;
 }
 a,
 a:hover,
