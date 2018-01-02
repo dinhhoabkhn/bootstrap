@@ -1,0 +1,136 @@
+$blue: #00bcd4;
+$green: #b1d136;
+$yellow: #ffc107;
+$white: #ffffff;
+$transparent: rgba(0,0,0,0);
+$bluey: #673ab7;
+$pink: #e91e63;
+$red: #f44336;
+@mixin position-left($x,$y){
+	position: absolute;
+	top: $x;
+	left: $y;
+}
+@mixin position-right($x,$y){
+	position: absolute;
+	top: $x;
+	right: $y;
+}
+@mixin position-bottom($x,$y){
+	position: absolute;
+	bottom: $x;
+	left: $y;
+}
+@font-face{
+	font-family: Lato;
+	src: url('../fonts/Lato-Regular.ttf');
+}
+@font-face{
+	font-family: Lato-bold;
+	src: url('../fonts/LAto-Bold.ttf');
+}
+@font-face{
+	font-family: VNFQuicksand;
+	src: url('../fonts/Quicksand-Regular.ttf');
+}
+@font-face{
+	font-family: VNFQuicksand-Bold;
+	src: url('../fonts/Quicksand-Bold.ttf');
+}
+body{
+	margin:0;
+	padding:0;
+	font-family: Lato;
+	font-size: 14px;
+}
+.decoration{
+	height: 19px;
+}
+.decoration-circle-pink{
+	width: 16px;
+    height: 16px;
+    border: solid 4px #e91e63;
+    border-radius: 100px;
+}
+.decoration-circle-green{
+	width: 16px;
+    height: 16px;
+    border: solid 4px #b1d136;
+    border-radius: 100px;
+}
+.decoration-circle-yellow{
+	width: 16px;
+    height: 16px;
+    border: solid 4px #ffc107;
+    border-radius: 100px;
+}
+a,
+a:hover,
+a:active,
+a:link{
+	text-decoration: none;
+}
+.blue{
+	background-color: $blue;
+}
+.bluey{
+	background-color: $bluey;
+}
+.pink{
+	background-color: $pink;
+}
+.yellow{
+	background-color: $yellow;
+}
+.green{
+	background-color: $green;
+}
+.red{
+	background-color: $red;
+}
+.cl-blue{
+	color: $blue;
+}
+.cl-bluey{
+	color: $bluey;
+}
+.cl-pink{
+	color: $pink;
+}
+.register-test{
+	width: 193px;
+	height: 50px;
+	font-family: Lato-bold;
+	font-weight: bold;
+	border-radius: 100px;
+	border: none;
+	color: white;
+	line-height: 1.14;
+}
+.register-test span:first-child{
+	margin-left: 15px;
+}
+.register-test span:nth-child(2){
+	margin-left: -7.9px;
+}
+.pre{
+	width: 83px;
+	height: 30px;
+	border-radius: 100px;
+	border: solid 2px #00bcd4;
+	background-color: rgba(0,0,0,0);
+	color: #00bcd4;
+	text-align: center;
+}
+.next{
+	@include position-right(48%,2%);
+	width: 83px;
+	height: 30px;
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 100px;
+	background-color: #e91e63;
+	color: white;
+	text-align: center;
+	border: none;
+	text-transform: uppercase;
+}
